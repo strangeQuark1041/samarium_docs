@@ -2,11 +2,11 @@ baseURL = 'https://strangeQuark1041.github.io/samarium_docs/'
 languageCode = 'en-us'
 title = 'Samarium: Documentation'
 theme = 'terminal'
-publishDir = "docs"
+publishDir = 'docs'
 
 [params]
     themeColor = 'blue'
-    fullWidthTheme = 'true'
+    fullWidthTheme = true
 
 [markup.goldmark.renderer]
     unsafe = true

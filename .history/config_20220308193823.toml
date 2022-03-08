@@ -1,4 +1,0 @@
-baseURL = 'https://strangeQuark1041.github.io/samarium_docs/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
-theme = 'terminal'
