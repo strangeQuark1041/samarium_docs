@@ -1,0 +1,64 @@
+<!doctype html><html lang=en>
+<head>
+<title> :: Samarium: Documentation</title><meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta name=description content="math In file: samarium/math/math.hpp Contents  Definition About Example Members  Definition namespace sm::math{} About Various mathematical functions forming the core of samarium
+Example using namespace sm::literals; sm::print() fmt::format(&amp;#34;{} degrees is {} in radians&amp;#34;, 36, 36_degrees); Members All members are marked constexpr, inline, [[nodiscard]] and noexcept   double sm::math::EPSILON = 1.e-4;
+  template &amp;lt;sm::concepts::FloatingPoint T&amp;gt; bool sm::math::almost_equal(T a, T b);
+  template &amp;lt;typename T&amp;gt; T sm::math::min(T value0, T value1);">
+<meta name=keywords content>
+<meta name=robots content="noodp">
+<link rel=canonical href=https://strangeQuark1041.github.io/samarium_docs/math/>
+<link rel=stylesheet href=https://strangeQuark1041.github.io/samarium_docs/assets/style.css>
+<link rel=stylesheet href=https://strangeQuark1041.github.io/samarium_docs/assets/blue.css>
+<link rel=stylesheet href=https://strangeQuark1041.github.io/samarium_docs/style.css>
+<link rel=apple-touch-icon href=https://strangeQuark1041.github.io/samarium_docs/img/apple-touch-icon-192x192.png>
+<link rel="shortcut icon" href=https://strangeQuark1041.github.io/samarium_docs/img/favicon/blue.png>
+<meta name=twitter:card content="summary">
+<meta property="og:locale" content="en">
+<meta property="og:type" content="article">
+<meta property="og:title" content>
+<meta property="og:description" content="math In file: samarium/math/math.hpp Contents  Definition About Example Members  Definition namespace sm::math{} About Various mathematical functions forming the core of samarium
+Example using namespace sm::literals; sm::print() fmt::format(&amp;#34;{} degrees is {} in radians&amp;#34;, 36, 36_degrees); Members All members are marked constexpr, inline, [[nodiscard]] and noexcept   double sm::math::EPSILON = 1.e-4;
+  template &amp;lt;sm::concepts::FloatingPoint T&amp;gt; bool sm::math::almost_equal(T a, T b);
+  template &amp;lt;typename T&amp;gt; T sm::math::min(T value0, T value1);">
+<meta property="og:url" content="https://strangeQuark1041.github.io/samarium_docs/math/">
+<meta property="og:site_name" content="Samarium: Documentation">
+<meta property="og:image" content="https://strangeQuark1041.github.io/samarium_docs/img/favicon/blue.png">
+<meta property="og:image:width" content="2048">
+<meta property="og:image:height" content="1024">
+</head><body class=blue>
+<div class="container full headings--one-size">
+<header class=header>
+<div class=header__inner>
+<div class=header__logo>
+<a href=https://strangeQuark1041.github.io/samarium_docs/>
+<div class=logo>
+Terminal
+</div></a>
+</div></div></header><div class=content>
+<div class=post>
+<h1 class=post-title>
+<a href=https://strangeQuark1041.github.io/samarium_docs/math/></a></h1><div class=post-meta>
+</div><div class=post-content><div>
+<h1 id=math>math<a href=#math class=hanchor arialabel=Anchor>&#8983;</a> </h1><h3 id=in-file-samariummathmathhpp>In file: <code>samarium/math/math.hpp</code><a href=#in-file-samariummathmathhpp class=hanchor arialabel=Anchor>&#8983;</a> </h3><h3 id=contents>Contents<a href=#contents class=hanchor arialabel=Anchor>&#8983;</a> </h3><ul>
+<li><a href=#definition>Definition</a></li><li><a href=#about>About</a></li><li><a href=#example>Example</a></li><li><a href=#members>Members</a></li></ul><h2 id=definition>Definition<a href=#definition class=hanchor arialabel=Anchor>&#8983;</a> </h2><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=display:flex><span><span style=color:#66d9ef>namespace</span> sm<span style=color:#f92672>::</span>math{}
+</span></span></code></pre></div><h2 id=about>About<a href=#about class=hanchor arialabel=Anchor>&#8983;</a> </h2><p>Various mathematical functions forming the core of samarium</p><h2 id=example>Example<a href=#example class=hanchor arialabel=Anchor>&#8983;</a> </h2><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=display:flex><span><span style=color:#66d9ef>using</span> <span style=color:#66d9ef>namespace</span> sm<span style=color:#f92672>::</span>literals;
+</span></span><span style=display:flex><span>sm<span style=color:#f92672>::</span>print()
+</span></span><span style=display:flex><span>fmt<span style=color:#f92672>::</span>format(<span style=color:#e6db74>&#34;{} degrees is {} in radians&#34;</span>, <span style=color:#ae81ff>36</span>, <span style=color:#ae81ff>36</span>_degrees);
+</span></span></code></pre></div><h2 id=members>Members<a href=#members class=hanchor arialabel=Anchor>&#8983;</a> </h2><h3 id=all-members-are-marked-constexpr-inline-nodiscard-and-noexcept>All members are marked <code>constexpr</code>, <code>inline</code>, <code>[[nodiscard]]</code> and <code>noexcept</code><a href=#all-members-are-marked-constexpr-inline-nodiscard-and-noexcept class=hanchor arialabel=Anchor>&#8983;</a> </h3><ul>
+<li>
+<p><code>double sm::math::EPSILON = 1.e-4;</code></p></li><li>
+<p><code>template &lt;sm::concepts::FloatingPoint T> bool sm::math::almost_equal(T a, T b);</code></p></li><li>
+<p><code>template &lt;typename T> T sm::math::min(T value0, T value1);</code></p></li><li>
+<p><code>template &lt;typename T> T sm::math::max(T value0, T value1);</code></p></li><li>
+<p><code>template &lt;u32 n> auto sm::math::power(auto x);</code></p></li><li>
+<p><code>consteval double sm::literals::operator"" _degrees(long double angle);</code></p></li><li>
+<p><code>consteval double sm::literals::operator"" _radians(long double angle);</code></p></li></ul></div></div></div></div><footer class=footer>
+<div class=footer__inner>
+<div class=copyright>
+<span>© 2022 Powered by <a href=http://gohugo.io>Hugo</a></span>
+<span>:: Theme made by <a href=https://twitter.com/panr>panr</a></span>
+</div></div></footer><script src=https://strangeQuark1041.github.io/samarium_docs/assets/main.js></script>
+<script src=https://strangeQuark1041.github.io/samarium_docs/assets/prism.js></script>
+</div></body></html>
