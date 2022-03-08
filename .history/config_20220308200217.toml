@@ -8,5 +8,4 @@ publishDir = "docs"
     themeColor = 'blue'
     fullWidthTheme = 'true'
 
-[markup.goldmark.renderer]
-    unsafe = true
+

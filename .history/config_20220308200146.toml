@@ -4,9 +4,4 @@ title = 'Samarium: Documentation'
 theme = 'terminal'
 publishDir = "docs"
 
-[params]
-    themeColor = 'blue'
-    fullWidthTheme = 'true'
-
-[markup.goldmark.renderer]
-    unsafe = true
+[p]
