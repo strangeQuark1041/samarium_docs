@@ -1,0 +1,5 @@
+baseURL = 'https://strangeQuark1041.github.io/samarium_docs/'
+languageCode = 'en-us'
+title = 'Samarium'
+theme = 'terminal'
+
