@@ -1,88 +1,255 @@
-<!doctype html><html lang=en>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<title> :: Samarium: Documentation</title><meta charset=utf-8>
-<meta name=viewport content="width=device-width,initial-scale=1">
-<meta name=description content="Vector2 In file: samarium/math/Vector2.hpp  Definition About Example Members Constructors Literals Member Functions Operators  Definition template &amp;lt;sm::concepts::Number T&amp;gt; class sm::Vector2_t; using sm::Vector2 = Vector2_t&amp;lt;double&amp;gt;; About A Vector2_t holds 2 values - an x and a y coordinate. It represents a Euclidean vector, or arrow in space.
-A Vector2 is a vector of doubles. As it is used frequently, it is a typedef for Vector2_t&amp;lt;double&amp;gt; Similarly, Indices for indexing into Images and Dimensions are both typedefs for Vector2_t&amp;lt;size_t&amp;gt;">
-<meta name=keywords content>
-<meta name=robots content="noodp">
-<link rel=canonical href=https://strangeQuark1041.github.io/samarium_docs/vector2/>
-<link rel=stylesheet href=https://strangeQuark1041.github.io/samarium_docs/assets/style.css>
-<link rel=stylesheet href=https://strangeQuark1041.github.io/samarium_docs/assets/blue.css>
-<link rel=stylesheet href=https://strangeQuark1041.github.io/samarium_docs/style.css>
-<link rel=apple-touch-icon href=https://strangeQuark1041.github.io/samarium_docs/img/apple-touch-icon-192x192.png>
-<link rel="shortcut icon" href=https://strangeQuark1041.github.io/samarium_docs/img/favicon/blue.png>
-<meta name=twitter:card content="summary">
-<meta property="og:locale" content="en">
-<meta property="og:type" content="article">
-<meta property="og:title" content>
+  
+    <title> :: Samarium: Documentation</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Vector2 In file: samarium/math/Vector2.hpp  Definition About Example Members Constructors Literals Member Functions Operators  Definition template &amp;lt;sm::concepts::Number T&amp;gt; class sm::Vector2_t; using sm::Vector2 = Vector2_t&amp;lt;double&amp;gt;; About A Vector2_t holds 2 values - an x and a y coordinate. It represents a Euclidean vector, or arrow in space.
+A Vector2 is a vector of doubles. As it is used frequently, it is a typedef for Vector2_t&amp;lt;double&amp;gt; Similarly, Indices for indexing into Images and Dimensions are both typedefs for Vector2_t&amp;lt;size_t&amp;gt;" />
+<meta name="keywords" content="" />
+<meta name="robots" content="noodp" />
+<link rel="canonical" href="https://strangeQuark1041.github.io/samarium_docs/vector2/" />
+
+
+
+
+<link rel="stylesheet" href="https://strangeQuark1041.github.io/samarium_docs/assets/style.css">
+
+  <link rel="stylesheet" href="https://strangeQuark1041.github.io/samarium_docs/assets/blue.css">
+
+
+
+<link rel="stylesheet" href="https://strangeQuark1041.github.io/samarium_docs/style.css">
+
+
+<link rel="apple-touch-icon" href="https://strangeQuark1041.github.io/samarium_docs/img/apple-touch-icon-192x192.png">
+
+  <link rel="shortcut icon" href="https://strangeQuark1041.github.io/samarium_docs/img/favicon/blue.png">
+
+
+
+<meta name="twitter:card" content="summary" />
+
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="">
 <meta property="og:description" content="Vector2 In file: samarium/math/Vector2.hpp  Definition About Example Members Constructors Literals Member Functions Operators  Definition template &amp;lt;sm::concepts::Number T&amp;gt; class sm::Vector2_t; using sm::Vector2 = Vector2_t&amp;lt;double&amp;gt;; About A Vector2_t holds 2 values - an x and a y coordinate. It represents a Euclidean vector, or arrow in space.
-A Vector2 is a vector of doubles. As it is used frequently, it is a typedef for Vector2_t&amp;lt;double&amp;gt; Similarly, Indices for indexing into Images and Dimensions are both typedefs for Vector2_t&amp;lt;size_t&amp;gt;">
-<meta property="og:url" content="https://strangeQuark1041.github.io/samarium_docs/vector2/">
-<meta property="og:site_name" content="Samarium: Documentation">
-<meta property="og:image" content="https://strangeQuark1041.github.io/samarium_docs/img/favicon/blue.png">
+A Vector2 is a vector of doubles. As it is used frequently, it is a typedef for Vector2_t&amp;lt;double&amp;gt; Similarly, Indices for indexing into Images and Dimensions are both typedefs for Vector2_t&amp;lt;size_t&amp;gt;" />
+<meta property="og:url" content="https://strangeQuark1041.github.io/samarium_docs/vector2/" />
+<meta property="og:site_name" content="Samarium: Documentation" />
+
+  
+    <meta property="og:image" content="https://strangeQuark1041.github.io/samarium_docs/img/favicon/blue.png">
+  
+
 <meta property="og:image:width" content="2048">
 <meta property="og:image:height" content="1024">
-</head><body class=blue>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body class="blue">
+
+
 <div class="container full headings--one-size">
-<header class=header>
-<div class=header__inner>
-<div class=header__logo>
-<a href=https://strangeQuark1041.github.io/samarium_docs/>
-<div class=logo>
-Terminal
-</div></a>
-</div></div></header><div class=content>
-<div class=post>
-<h1 class=post-title>
-<a href=https://strangeQuark1041.github.io/samarium_docs/vector2/></a></h1><div class=post-meta>
-</div><div class=post-content><div>
-<h1 id=vector2>Vector2<a href=#vector2 class=hanchor arialabel=Anchor>&#8983;</a> </h1><h3 id=in-file-samariummathvector2hpp>In file: <code>samarium/math/Vector2.hpp</code><a href=#in-file-samariummathvector2hpp class=hanchor arialabel=Anchor>&#8983;</a> </h3><ul>
-<li><a href=#definition>Definition</a></li><li><a href=#about>About</a></li><li><a href=#example>Example</a></li><li><a href=#members>Members</a></li><li><a href=#constructors>Constructors</a></li><li><a href=#literals>Literals</a></li><li><a href=#member-functions>Member Functions</a></li><li><a href=#operators>Operators</a></li></ul><h2 id=definition>Definition<a href=#definition class=hanchor arialabel=Anchor>&#8983;</a> </h2><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=display:flex><span><span style=color:#66d9ef>template</span> <span style=color:#f92672>&lt;</span>sm<span style=color:#f92672>::</span>concepts<span style=color:#f92672>::</span>Number T<span style=color:#f92672>&gt;</span> <span style=color:#66d9ef>class</span> <span style=color:#a6e22e>sm</span><span style=color:#f92672>::</span>Vector2_t;
-</span></span><span style=display:flex><span><span style=color:#66d9ef>using</span> sm<span style=color:#f92672>::</span>Vector2 <span style=color:#f92672>=</span> Vector2_t<span style=color:#f92672>&lt;</span><span style=color:#66d9ef>double</span><span style=color:#f92672>&gt;</span>;
-</span></span></code></pre></div><h2 id=about>About<a href=#about class=hanchor arialabel=Anchor>&#8983;</a> </h2><p>A <code>Vector2_t</code> holds 2 values - an x and a y coordinate. It represents a Euclidean vector, or arrow in space.</p><p>A <code>Vector2</code> is a vector of doubles. As it is used frequently, it is a typedef for <code>Vector2_t&lt;double></code>
-Similarly, <code>Indices</code> for indexing into <code>Images</code> and <code>Dimensions</code> are both typedefs for <code>Vector2_t&lt;size_t></code></p><h2 id=example>Example<a href=#example class=hanchor arialabel=Anchor>&#8983;</a> </h2><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=display:flex><span><span style=color:#66d9ef>auto</span> vec <span style=color:#f92672>=</span> Vector2{<span style=color:#ae81ff>2</span>, <span style=color:#ae81ff>3</span>};
-</span></span><span style=display:flex><span>fmt<span style=color:#f92672>::</span>print(<span style=color:#e6db74>&#34;{}&#34;</span>, vec); <span style=color:#75715e>// prints: Vec( 2.000,  3.000)
-</span></span></span></code></pre></div><h2 id=members>Members<a href=#members class=hanchor arialabel=Anchor>&#8983;</a> </h2><ol>
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="https://strangeQuark1041.github.io/samarium_docs/">
+  <div class="logo">
+    Terminal
+  </div>
+</a>
+
+    </div>
+    
+  </div>
+  
+</header>
+
+
+  <div class="content">
+    
+<div class="post">
+  <h1 class="post-title">
+    <a href="https://strangeQuark1041.github.io/samarium_docs/vector2/"></a></h1>
+  <div class="post-meta">
+    
+    
+    
+  </div>
+
+  
+  
+
+
+  
+
+  <div class="post-content"><div>
+        <h1 id="vector2">Vector2<a href="#vector2" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+<h3 id="in-file-samariummathvector2hpphttpsgithubcomstrangequark1041samariumblobmainsrcsamariummathvector2hpp">In file: <a href="https://github.com/strangeQuark1041/samarium/blob/main/src/samarium/math/Vector2.hpp"><code>samarium/math/Vector2.hpp</code></a><a href="#in-file-samariummathvector2hpphttpsgithubcomstrangequark1041samariumblobmainsrcsamariummathvector2hpp" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3>
+<ul>
+<li><a href="#definition">Definition</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#example">Example</a></li>
+<li><a href="#members">Members</a></li>
+<li><a href="#constructors">Constructors</a></li>
+<li><a href="#literals">Literals</a></li>
+<li><a href="#member-functions">Member Functions</a></li>
+<li><a href="#operators">Operators</a></li>
+</ul>
+<h2 id="definition">Definition<a href="#definition" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#66d9ef">template</span> <span style="color:#f92672">&lt;</span>sm<span style="color:#f92672">::</span>concepts<span style="color:#f92672">::</span>Number T<span style="color:#f92672">&gt;</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">sm</span><span style="color:#f92672">::</span>Vector2_t;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">using</span> sm<span style="color:#f92672">::</span>Vector2 <span style="color:#f92672">=</span> Vector2_t<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">double</span><span style="color:#f92672">&gt;</span>;
+</span></span></code></pre></div><h2 id="about">About<a href="#about" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>A <code>Vector2_t</code> holds 2 values - an x and a y coordinate. It represents a Euclidean vector, or arrow in space.</p>
+<p>A <code>Vector2</code> is a vector of doubles. As it is used frequently, it is a typedef for <code>Vector2_t&lt;double&gt;</code>
+Similarly, <code>Indices</code> for indexing into <code>Images</code> and <code>Dimensions</code> are both typedefs for <code>Vector2_t&lt;size_t&gt;</code></p>
+<h2 id="example">Example<a href="#example" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#66d9ef">auto</span> vec <span style="color:#f92672">=</span> Vector2{<span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>};
+</span></span><span style="display:flex;"><span>fmt<span style="color:#f92672">::</span>print(<span style="color:#e6db74">&#34;{}&#34;</span>, vec); <span style="color:#75715e">// prints: Vec( 2.000,  3.000)
+</span></span></span></code></pre></div><h2 id="members">Members<a href="#members" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<ol>
 <li>
-<p><code>T x</code> : x-coordinate</p></li><li>
-<p><code>T y</code> : y-coordinate</p></li></ol><h2 id=constructors>Constructors<a href=#constructors class=hanchor arialabel=Anchor>&#8983;</a> </h2><p><code>Vector2_t</code> is an <a href=https://en.cppreference.com/w/cpp/language/aggregate_initialization>aggregate</a> and hence all constructors are generated by the compiler. Use as:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=display:flex><span><span style=color:#66d9ef>auto</span> vec1 <span style=color:#f92672>=</span> sm<span style=color:#f92672>::</span>Vector2(); <span style=color:#75715e>// x=0,y=0
-</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#66d9ef>auto</span> vec2 <span style=color:#f92672>=</span> sm<span style=color:#f92672>::</span>Vector2{}; <span style=color:#75715e>// x=0,y=0
-</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#66d9ef>auto</span> vec3 <span style=color:#f92672>=</span> sm<span style=color:#f92672>::</span>Vector2(<span style=color:#ae81ff>1</span>,<span style=color:#ae81ff>2</span>); <span style=color:#75715e>// x=1,y=2
-</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#66d9ef>auto</span> vec4 <span style=color:#f92672>=</span> sm<span style=color:#f92672>::</span>Vector2{<span style=color:#ae81ff>1</span>,<span style=color:#ae81ff>2</span>};  <span style=color:#75715e>// x=1,y=2
-</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#66d9ef>auto</span> vec5 <span style=color:#f92672>=</span> sm<span style=color:#f92672>::</span>Vector2{.x <span style=color:#f92672>=</span> <span style=color:#ae81ff>1</span>, .y <span style=color:#f92672>=</span> <span style=color:#ae81ff>2</span>}; <span style=color:#75715e>// x=1,y=2
-</span></span></span></code></pre></div><h2 id=literals>Literals<a href=#literals class=hanchor arialabel=Anchor>&#8983;</a> </h2><ol>
+<p><code>T x</code> : x-coordinate</p>
+</li>
 <li>
-<p><code>consteval Vector2 operator"" _x(long double x);</code> : constructs <code>Vector2{x, 0}</code></p></li><li>
-<p><code>consteval Vector2 operator"" _y(long double y);</code> : constructs <code>Vector2{0, y}</code></p></li></ol><p>Example</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=display:flex><span><span style=color:#66d9ef>using</span> <span style=color:#66d9ef>namespace</span> sm<span style=color:#f92672>::</span>literals;
-</span></span><span style=display:flex><span><span style=color:#66d9ef>auto</span> vec1 <span style=color:#f92672>=</span> <span style=color:#ae81ff>1.0</span>x; <span style=color:#75715e>// (1,0)
-</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#66d9ef>auto</span> vec2 <span style=color:#f92672>=</span> <span style=color:#f92672>-</span><span style=color:#ae81ff>4.2</span>y; <span style=color:#75715e>// (0,-4.2)
-</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#66d9ef>auto</span> vec3 <span style=color:#f92672>=</span> <span style=color:#ae81ff>1.0</span>x <span style=color:#f92672>-</span> <span style=color:#ae81ff>3.14</span>y; <span style=color:#75715e>// (1,-3.14)
-</span></span></span></code></pre></div><h2 id=member-functions>Member Functions<a href=#member-functions class=hanchor arialabel=Anchor>&#8983;</a> </h2><ol>
+<p><code>T y</code> : y-coordinate</p>
+</li>
+</ol>
+<h2 id="constructors">Constructors<a href="#constructors" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p><code>Vector2_t</code> is an <a href="https://en.cppreference.com/w/cpp/language/aggregate_initialization">aggregate</a> and hence all constructors are generated by the compiler. Use as:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#66d9ef">auto</span> vec1 <span style="color:#f92672">=</span> sm<span style="color:#f92672">::</span>Vector2(); <span style="color:#75715e">// x=0,y=0
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">auto</span> vec2 <span style="color:#f92672">=</span> sm<span style="color:#f92672">::</span>Vector2{}; <span style="color:#75715e">// x=0,y=0
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">auto</span> vec3 <span style="color:#f92672">=</span> sm<span style="color:#f92672">::</span>Vector2(<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">2</span>); <span style="color:#75715e">// x=1,y=2
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">auto</span> vec4 <span style="color:#f92672">=</span> sm<span style="color:#f92672">::</span>Vector2{<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">2</span>};  <span style="color:#75715e">// x=1,y=2
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">auto</span> vec5 <span style="color:#f92672">=</span> sm<span style="color:#f92672">::</span>Vector2{.x <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>, .y <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>}; <span style="color:#75715e">// x=1,y=2
+</span></span></span></code></pre></div><h2 id="literals">Literals<a href="#literals" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<ol>
 <li>
-<p><code>constexpr double length() const noexcept;</code> : length of the vector</p></li><li>
-<p><code>constexpr double length_sq() const noexcept;</code> : length squared of the vector. Avoids the <code>sqrt</code> to save computing time</p></li><li>
-<p><code>constexpr double angle() const noexcept;</code> : angle of the vector from the positive x-axis</p></li></ol><h2 id=operators>Operators<a href=#operators class=hanchor arialabel=Anchor>&#8983;</a> </h2><p><code>Vector2_t</code> is overloaded on common mathematical operators for both other vectors and scalars (<code>double</code>s). Operations are conducted element wise. <strong>This means that multiplication is element wise,</strong> and not the dot or cross product.</p><p>NOTE: all these are <code>constexpr</code> and <code>noexcept</code></p><p>Given 2 <code>Vector2_t&lt;T></code>s, <code>lhs</code> and <code>rhs</code></p><ol>
+<p><code>consteval Vector2 operator&quot;&quot; _x(long double x);</code> : constructs <code>Vector2{x, 0}</code></p>
+</li>
 <li>
-<p><code>Vector2_t&lt;T> operator+=(rhs)</code></p></li><li>
-<p><code>Vector2_t&lt;T> operator-=(rhs)</code></p></li><li>
-<p><code>Vector2_t&lt;T> operator*=(rhs)</code></p></li><li>
-<p><code>Vector2_t&lt;T> operator*=(T num)</code></p></li><li>
-<p><code>Vector2_t&lt;T> operator/=(rhs)</code></p></li><li>
-<p><code>Vector2_t&lt;T> operator/=(T num)</code></p></li><li>
-<p><code>bool operator==(lhs, rhs);</code></p></li><li>
-<p><code>bool operator!=(lhs, rhs);</code></p></li><li>
-<p><code>Vector2_t&lt;T> operator+(lhs, rhs);</code></p></li><li>
-<p><code>Vector2_t&lt;T> operator-(lhs, rhs);</code></p></li><li>
-<p><code>Vector2_t&lt;T> operator*(lhs, rhs);</code></p></li><li>
-<p><code>Vector2_t&lt;T> operator*(lhs, T num);</code></p></li><li>
-<p><code>Vector2_t&lt;T> operator*(T num, rhs);</code></p></li><li>
-<p><code>Vector2_t&lt;T> operator/(lhs, rhs);</code></p></li><li>
-<p><code>Vector2_t&lt;T> operator/(lhs, T num);</code></p></li></ol></div></div></div></div><footer class=footer>
-<div class=footer__inner>
-<div class=copyright>
-<span>© 2022 Powered by <a href=http://gohugo.io>Hugo</a></span>
-<span>:: Theme made by <a href=https://twitter.com/panr>panr</a></span>
-</div></div></footer><script src=https://strangeQuark1041.github.io/samarium_docs/assets/main.js></script>
-<script src=https://strangeQuark1041.github.io/samarium_docs/assets/prism.js></script>
-</div></body></html>
+<p><code>consteval Vector2 operator&quot;&quot; _y(long double y);</code> : constructs <code>Vector2{0, y}</code></p>
+</li>
+</ol>
+<p>Example</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#66d9ef">using</span> <span style="color:#66d9ef">namespace</span> sm<span style="color:#f92672">::</span>literals;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">auto</span> vec1 <span style="color:#f92672">=</span> <span style="color:#ae81ff">1.0</span>x; <span style="color:#75715e">// (1,0)
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">auto</span> vec2 <span style="color:#f92672">=</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">4.2</span>y; <span style="color:#75715e">// (0,-4.2)
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">auto</span> vec3 <span style="color:#f92672">=</span> <span style="color:#ae81ff">1.0</span>x <span style="color:#f92672">-</span> <span style="color:#ae81ff">3.14</span>y; <span style="color:#75715e">// (1,-3.14)
+</span></span></span></code></pre></div><h2 id="member-functions">Member Functions<a href="#member-functions" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<ol>
+<li>
+<p><code>constexpr double length() const noexcept;</code> : length of the vector</p>
+</li>
+<li>
+<p><code>constexpr double length_sq() const noexcept;</code> : length squared of the vector. Avoids the <code>sqrt</code> to save computing time</p>
+</li>
+<li>
+<p><code>constexpr double angle() const noexcept;</code> : angle of the vector from the positive x-axis</p>
+</li>
+</ol>
+<h2 id="operators">Operators<a href="#operators" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p><code>Vector2_t</code> is overloaded on common mathematical operators for both other vectors and scalars (<code>double</code>s). Operations are conducted element wise. <strong>This means that multiplication is element wise,</strong> and not the dot or cross product.</p>
+<p>NOTE: all these are <code>constexpr</code> and <code>noexcept</code></p>
+<p>Given 2 <code>Vector2_t&lt;T&gt;</code>s, <code>lhs</code> and <code>rhs</code></p>
+<ol>
+<li>
+<p><code>Vector2_t&lt;T&gt; operator+=(rhs)</code></p>
+</li>
+<li>
+<p><code>Vector2_t&lt;T&gt; operator-=(rhs)</code></p>
+</li>
+<li>
+<p><code>Vector2_t&lt;T&gt; operator*=(rhs)</code></p>
+</li>
+<li>
+<p><code>Vector2_t&lt;T&gt; operator*=(T num)</code></p>
+</li>
+<li>
+<p><code>Vector2_t&lt;T&gt; operator/=(rhs)</code></p>
+</li>
+<li>
+<p><code>Vector2_t&lt;T&gt; operator/=(T num)</code></p>
+</li>
+<li>
+<p><code>bool operator==(lhs, rhs);</code></p>
+</li>
+<li>
+<p><code>bool operator!=(lhs, rhs);</code></p>
+</li>
+<li>
+<p><code>Vector2_t&lt;T&gt; operator+(lhs, rhs);</code></p>
+</li>
+<li>
+<p><code>Vector2_t&lt;T&gt; operator-(lhs, rhs);</code></p>
+</li>
+<li>
+<p><code>Vector2_t&lt;T&gt; operator*(lhs, rhs);</code></p>
+</li>
+<li>
+<p><code>Vector2_t&lt;T&gt; operator*(lhs, T num);</code></p>
+</li>
+<li>
+<p><code>Vector2_t&lt;T&gt; operator*(T num, rhs);</code></p>
+</li>
+<li>
+<p><code>Vector2_t&lt;T&gt; operator/(lhs, rhs);</code></p>
+</li>
+<li>
+<p><code>Vector2_t&lt;T&gt; operator/(lhs, T num);</code></p>
+</li>
+</ol>
+
+      </div></div>
+
+  
+
+  
+
+</div>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright">
+        <span>© 2022 Powered by <a href="http://gohugo.io">Hugo</a></span>
+    
+        <span>:: Theme made by <a href="https://twitter.com/panr">panr</a></span>
+      </div>
+  </div>
+</footer>
+
+<script src="https://strangeQuark1041.github.io/samarium_docs/assets/main.js"></script>
+<script src="https://strangeQuark1041.github.io/samarium_docs/assets/prism.js"></script>
+
+
+
+
+
+
+
+  
+</div>
+
+</body>
+</html>

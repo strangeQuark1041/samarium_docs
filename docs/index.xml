@@ -1,212 +1,256 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Samarium: Documentation</title><link>https://strangeQuark1041.github.io/samarium_docs/</link><description>Recent content on Samarium: Documentation</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://strangeQuark1041.github.io/samarium_docs/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://strangeQuark1041.github.io/samarium_docs/math/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://strangeQuark1041.github.io/samarium_docs/math/</guid><description>math In file: samarium/math/math.hpp Contents Definition About Example Members Definition namespace sm::math{} About Various mathematical functions forming the core of samarium
-Example using namespace sm::literals; sm::print() fmt::format(&amp;#34;{} degrees is {} in radians&amp;#34;, 36, 36_degrees); Members All members are marked constexpr, inline, [[nodiscard]] and noexcept double sm::math::EPSILON = 1.e-4;
-template &amp;lt;sm::concepts::FloatingPoint T&amp;gt; bool sm::math::almost_equal(T a, T b);
-template &amp;lt;typename T&amp;gt; T sm::math::min(T value0, T value1);</description><content>&lt;h1 id="math">math&lt;/h1>
-&lt;h3 id="in-file-samariummathmathhpp">In file: &lt;code>samarium/math/math.hpp&lt;/code>&lt;/h3>
-&lt;h3 id="contents">Contents&lt;/h3>
-&lt;ul>
-&lt;li>&lt;a href="#definition">Definition&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#about">About&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#example">Example&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#members">Members&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h2 id="definition">Definition&lt;/h2>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-cpp" data-lang="cpp">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">namespace&lt;/span> sm&lt;span style="color:#f92672">::&lt;/span>math{}
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="about">About&lt;/h2>
-&lt;p>Various mathematical functions forming the core of samarium&lt;/p>
-&lt;h2 id="example">Example&lt;/h2>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-cpp" data-lang="cpp">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">using&lt;/span> &lt;span style="color:#66d9ef">namespace&lt;/span> sm&lt;span style="color:#f92672">::&lt;/span>literals;
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>sm&lt;span style="color:#f92672">::&lt;/span>print()
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>fmt&lt;span style="color:#f92672">::&lt;/span>format(&lt;span style="color:#e6db74">&amp;#34;{} degrees is {} in radians&amp;#34;&lt;/span>, &lt;span style="color:#ae81ff">36&lt;/span>, &lt;span style="color:#ae81ff">36&lt;/span>_degrees);
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="members">Members&lt;/h2>
-&lt;h3 id="all-members-are-marked-constexpr-inline-nodiscard-and-noexcept">All members are marked &lt;code>constexpr&lt;/code>, &lt;code>inline&lt;/code>, &lt;code>[[nodiscard]]&lt;/code> and &lt;code>noexcept&lt;/code>&lt;/h3>
-&lt;ul>
-&lt;li>
-&lt;p>&lt;code>double sm::math::EPSILON = 1.e-4;&lt;/code>&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;code>template &amp;lt;sm::concepts::FloatingPoint T&amp;gt; bool sm::math::almost_equal(T a, T b);&lt;/code>&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;code>template &amp;lt;typename T&amp;gt; T sm::math::min(T value0, T value1);&lt;/code>&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;code>template &amp;lt;typename T&amp;gt; T sm::math::max(T value0, T value1);&lt;/code>&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;code>template &amp;lt;u32 n&amp;gt; auto sm::math::power(auto x);&lt;/code>&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;code>consteval double sm::literals::operator&amp;quot;&amp;quot; _degrees(long double angle);&lt;/code>&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;code>consteval double sm::literals::operator&amp;quot;&amp;quot; _radians(long double angle);&lt;/code>&lt;/p>
-&lt;/li>
-&lt;/ul></content></item><item><title/><link>https://strangeQuark1041.github.io/samarium_docs/random/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://strangeQuark1041.github.io/samarium_docs/random/</guid><description>random In file: samarium/util/random.hpp Contents Definition About Example Members Definition namespace sm::random{} About Generate random numbers, objects&amp;hellip;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Samarium: Documentation</title>
+    <link>https://strangeQuark1041.github.io/samarium_docs/</link>
+    <description>Recent content on Samarium: Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://strangeQuark1041.github.io/samarium_docs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://strangeQuark1041.github.io/samarium_docs/math/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://strangeQuark1041.github.io/samarium_docs/math/</guid>
+      <description>math In file: samarium/math/math.hpp Contents  Contents Definition About Example Members  Definition namespace sm::math{} About Various mathematical functions forming the core of samarium
+Example using namespace sm::literals; sm::print() fmt::format(&amp;#34;{} degrees is {} in radians&amp;#34;, 36, 36_degrees); Members All members are marked constexpr, inline, [[nodiscard]] and noexcept   double sm::math::EPSILON = 1.e-4;
+  template &amp;lt;sm::concepts::FloatingPoint T&amp;gt; bool sm::math::almost_equal(T a, T b);
+  template &amp;lt;typename T&amp;gt; T sm::math::min(T value0, T value1);</description>
+      <content>&lt;h1 id=&#34;math&#34;&gt;math&lt;/h1&gt;
+&lt;h4 id=&#34;in-file-samariummathmathhpphttpsgithubcomstrangequark1041samariumblobmainsrcsamariummathmathhpp&#34;&gt;In file: &lt;a href=&#34;https://github.com/strangeQuark1041/samarium/blob/main/src/samarium/math/math.hpp&#34;&gt;&lt;code&gt;samarium/math/math.hpp&lt;/code&gt;&lt;/a&gt;&lt;/h4&gt;
+&lt;h2 id=&#34;contents&#34;&gt;Contents&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#contents&#34;&gt;Contents&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#definition&#34;&gt;Definition&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#about&#34;&gt;About&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#example&#34;&gt;Example&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#members&#34;&gt;Members&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;definition&#34;&gt;Definition&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-cpp&#34; data-lang=&#34;cpp&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;namespace&lt;/span&gt; sm&lt;span style=&#34;color:#f92672&#34;&gt;::&lt;/span&gt;math{}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;about&#34;&gt;About&lt;/h2&gt;
+&lt;p&gt;Various mathematical functions forming the core of samarium&lt;/p&gt;
+&lt;h2 id=&#34;example&#34;&gt;Example&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-cpp&#34; data-lang=&#34;cpp&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;using&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;namespace&lt;/span&gt; sm&lt;span style=&#34;color:#f92672&#34;&gt;::&lt;/span&gt;literals;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sm&lt;span style=&#34;color:#f92672&#34;&gt;::&lt;/span&gt;print()
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;fmt&lt;span style=&#34;color:#f92672&#34;&gt;::&lt;/span&gt;format(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;{} degrees is {} in radians&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;36&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;36&lt;/span&gt;_degrees);
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;members&#34;&gt;Members&lt;/h2&gt;
+&lt;h3 id=&#34;all-members-are-marked-constexpr-inline-nodiscard-and-noexcept&#34;&gt;All members are marked &lt;code&gt;constexpr&lt;/code&gt;, &lt;code&gt;inline&lt;/code&gt;, &lt;code&gt;[[nodiscard]]&lt;/code&gt; and &lt;code&gt;noexcept&lt;/code&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;double sm::math::EPSILON = 1.e-4;&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;template &amp;lt;sm::concepts::FloatingPoint T&amp;gt; bool sm::math::almost_equal(T a, T b);&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;template &amp;lt;typename T&amp;gt; T sm::math::min(T value0, T value1);&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;template &amp;lt;typename T&amp;gt; T sm::math::max(T value0, T value1);&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;template &amp;lt;u32 n&amp;gt; auto sm::math::power(auto x);&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;consteval double sm::literals::operator&amp;quot;&amp;quot; _degrees(long double angle);&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;consteval double sm::literals::operator&amp;quot;&amp;quot; _radians(long double angle);&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://strangeQuark1041.github.io/samarium_docs/random/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://strangeQuark1041.github.io/samarium_docs/random/</guid>
+      <description>random In file: samarium/util/random.hpp Contents  Contents Definition About Example Members  Definition namespace sm::random{} About Generate random numbers, objects&amp;hellip;
 sm::random works by precomputing random doubles and storing them in a cache (sm::random::cache)
 This is much faster than creating random numbers in a hot loop.
 To resize this cache, call sm::random::resize_cache(/* size_t */ size)
-Example for(auto i : std::views::iota(1,10) { sm::print(sm::random(), sm::rand_vector()); } Members All reside in namespace sm::random static size_t cache_length: length of cache</description><content>&lt;h1 id="random">random&lt;/h1>
-&lt;h3 id="in-file-samariumutilrandomhpp">In file: &lt;code>samarium/util/random.hpp&lt;/code>&lt;/h3>
-&lt;h3 id="contents">Contents&lt;/h3>
-&lt;ul>
-&lt;li>&lt;a href="#definition">Definition&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#about">About&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#example">Example&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#members">Members&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h2 id="definition">Definition&lt;/h2>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-cpp" data-lang="cpp">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">namespace&lt;/span> sm&lt;span style="color:#f92672">::&lt;/span>random{}
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="about">About&lt;/h2>
-&lt;p>Generate random numbers, objects&amp;hellip;&lt;/p>
-&lt;p>&lt;code>sm::random&lt;/code> works by precomputing random &lt;code>double&lt;/code>s and storing them in a cache (&lt;code>sm::random::cache&lt;/code>)&lt;/p>
-&lt;p>This is much faster than creating random numbers in a hot loop.&lt;/p>
-&lt;p>To resize this cache, call &lt;code>sm::random::resize_cache(/* size_t */ size)&lt;/code>&lt;/p>
-&lt;h2 id="example">Example&lt;/h2>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-cpp" data-lang="cpp">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">for&lt;/span>(&lt;span style="color:#66d9ef">auto&lt;/span> i : std&lt;span style="color:#f92672">::&lt;/span>views&lt;span style="color:#f92672">::&lt;/span>iota(&lt;span style="color:#ae81ff">1&lt;/span>,&lt;span style="color:#ae81ff">10&lt;/span>)
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>{
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> sm&lt;span style="color:#f92672">::&lt;/span>print(sm&lt;span style="color:#f92672">::&lt;/span>random(), sm&lt;span style="color:#f92672">::&lt;/span>rand_vector());
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="members">Members&lt;/h2>
-&lt;h3 id="all-reside-in-namespace-smrandom">All reside in namespace &lt;code>sm::random&lt;/code>&lt;/h3>
-&lt;ul>
-&lt;li>
-&lt;p>&lt;code>static size_t cache_length&lt;/code>: length of cache&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;code>static size_t current&lt;/code>: Current index in cache&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;code>static std::vector&amp;lt;double&amp;gt; cache&lt;/code>&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;code>void fill_cache(size_t size)&lt;/code>&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;code>double random()&lt;/code>&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;code>template &amp;lt;typename T&amp;gt; T rand_range(Extents&amp;lt;T&amp;gt; range)&lt;/code>&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;code>Vector2 rand_vector(Rect&amp;lt;double&amp;gt; bounding_box)&lt;/code>&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;code>Vector2 rand_vector(Extents&amp;lt;f64&amp;gt; radius_range, Extents&amp;lt;f64&amp;gt; angle_range)&lt;/code>&lt;/p>
-&lt;/li>
-&lt;/ul></content></item><item><title/><link>https://strangeQuark1041.github.io/samarium_docs/vector2/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://strangeQuark1041.github.io/samarium_docs/vector2/</guid><description>Vector2 In file: samarium/math/Vector2.hpp Definition About Example Members Constructors Literals Member Functions Operators Definition template &amp;lt;sm::concepts::Number T&amp;gt; class sm::Vector2_t; using sm::Vector2 = Vector2_t&amp;lt;double&amp;gt;; About A Vector2_t holds 2 values - an x and a y coordinate. It represents a Euclidean vector, or arrow in space.
-A Vector2 is a vector of doubles. As it is used frequently, it is a typedef for Vector2_t&amp;lt;double&amp;gt; Similarly, Indices for indexing into Images and Dimensions are both typedefs for Vector2_t&amp;lt;size_t&amp;gt;</description><content>&lt;h1 id="vector2">Vector2&lt;/h1>
-&lt;h3 id="in-file-samariummathvector2hpp">In file: &lt;code>samarium/math/Vector2.hpp&lt;/code>&lt;/h3>
-&lt;ul>
-&lt;li>&lt;a href="#definition">Definition&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#about">About&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#example">Example&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#members">Members&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#constructors">Constructors&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#literals">Literals&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#member-functions">Member Functions&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#operators">Operators&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h2 id="definition">Definition&lt;/h2>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-cpp" data-lang="cpp">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">template&lt;/span> &lt;span style="color:#f92672">&amp;lt;&lt;/span>sm&lt;span style="color:#f92672">::&lt;/span>concepts&lt;span style="color:#f92672">::&lt;/span>Number T&lt;span style="color:#f92672">&amp;gt;&lt;/span> &lt;span style="color:#66d9ef">class&lt;/span> &lt;span style="color:#a6e22e">sm&lt;/span>&lt;span style="color:#f92672">::&lt;/span>Vector2_t;
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">using&lt;/span> sm&lt;span style="color:#f92672">::&lt;/span>Vector2 &lt;span style="color:#f92672">=&lt;/span> Vector2_t&lt;span style="color:#f92672">&amp;lt;&lt;/span>&lt;span style="color:#66d9ef">double&lt;/span>&lt;span style="color:#f92672">&amp;gt;&lt;/span>;
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="about">About&lt;/h2>
-&lt;p>A &lt;code>Vector2_t&lt;/code> holds 2 values - an x and a y coordinate. It represents a Euclidean vector, or arrow in space.&lt;/p>
-&lt;p>A &lt;code>Vector2&lt;/code> is a vector of doubles. As it is used frequently, it is a typedef for &lt;code>Vector2_t&amp;lt;double&amp;gt;&lt;/code>
-Similarly, &lt;code>Indices&lt;/code> for indexing into &lt;code>Images&lt;/code> and &lt;code>Dimensions&lt;/code> are both typedefs for &lt;code>Vector2_t&amp;lt;size_t&amp;gt;&lt;/code>&lt;/p>
-&lt;h2 id="example">Example&lt;/h2>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-cpp" data-lang="cpp">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">auto&lt;/span> vec &lt;span style="color:#f92672">=&lt;/span> Vector2{&lt;span style="color:#ae81ff">2&lt;/span>, &lt;span style="color:#ae81ff">3&lt;/span>};
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>fmt&lt;span style="color:#f92672">::&lt;/span>print(&lt;span style="color:#e6db74">&amp;#34;{}&amp;#34;&lt;/span>, vec); &lt;span style="color:#75715e">// prints: Vec( 2.000, 3.000)
-&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="members">Members&lt;/h2>
-&lt;ol>
-&lt;li>
-&lt;p>&lt;code>T x&lt;/code> : x-coordinate&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;code>T y&lt;/code> : y-coordinate&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;h2 id="constructors">Constructors&lt;/h2>
-&lt;p>&lt;code>Vector2_t&lt;/code> is an &lt;a href="https://en.cppreference.com/w/cpp/language/aggregate_initialization">aggregate&lt;/a> and hence all constructors are generated by the compiler. Use as:&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-cpp" data-lang="cpp">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">auto&lt;/span> vec1 &lt;span style="color:#f92672">=&lt;/span> sm&lt;span style="color:#f92672">::&lt;/span>Vector2(); &lt;span style="color:#75715e">// x=0,y=0
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span>&lt;span style="color:#66d9ef">auto&lt;/span> vec2 &lt;span style="color:#f92672">=&lt;/span> sm&lt;span style="color:#f92672">::&lt;/span>Vector2{}; &lt;span style="color:#75715e">// x=0,y=0
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span>&lt;span style="color:#66d9ef">auto&lt;/span> vec3 &lt;span style="color:#f92672">=&lt;/span> sm&lt;span style="color:#f92672">::&lt;/span>Vector2(&lt;span style="color:#ae81ff">1&lt;/span>,&lt;span style="color:#ae81ff">2&lt;/span>); &lt;span style="color:#75715e">// x=1,y=2
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span>&lt;span style="color:#66d9ef">auto&lt;/span> vec4 &lt;span style="color:#f92672">=&lt;/span> sm&lt;span style="color:#f92672">::&lt;/span>Vector2{&lt;span style="color:#ae81ff">1&lt;/span>,&lt;span style="color:#ae81ff">2&lt;/span>}; &lt;span style="color:#75715e">// x=1,y=2
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span>&lt;span style="color:#66d9ef">auto&lt;/span> vec5 &lt;span style="color:#f92672">=&lt;/span> sm&lt;span style="color:#f92672">::&lt;/span>Vector2{.x &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#ae81ff">1&lt;/span>, .y &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#ae81ff">2&lt;/span>}; &lt;span style="color:#75715e">// x=1,y=2
-&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="literals">Literals&lt;/h2>
-&lt;ol>
-&lt;li>
-&lt;p>&lt;code>consteval Vector2 operator&amp;quot;&amp;quot; _x(long double x);&lt;/code> : constructs &lt;code>Vector2{x, 0}&lt;/code>&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;code>consteval Vector2 operator&amp;quot;&amp;quot; _y(long double y);&lt;/code> : constructs &lt;code>Vector2{0, y}&lt;/code>&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;p>Example&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-cpp" data-lang="cpp">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">using&lt;/span> &lt;span style="color:#66d9ef">namespace&lt;/span> sm&lt;span style="color:#f92672">::&lt;/span>literals;
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">auto&lt;/span> vec1 &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#ae81ff">1.0&lt;/span>x; &lt;span style="color:#75715e">// (1,0)
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span>&lt;span style="color:#66d9ef">auto&lt;/span> vec2 &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#f92672">-&lt;/span>&lt;span style="color:#ae81ff">4.2&lt;/span>y; &lt;span style="color:#75715e">// (0,-4.2)
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span>&lt;span style="color:#66d9ef">auto&lt;/span> vec3 &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#ae81ff">1.0&lt;/span>x &lt;span style="color:#f92672">-&lt;/span> &lt;span style="color:#ae81ff">3.14&lt;/span>y; &lt;span style="color:#75715e">// (1,-3.14)
-&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="member-functions">Member Functions&lt;/h2>
-&lt;ol>
-&lt;li>
-&lt;p>&lt;code>constexpr double length() const noexcept;&lt;/code> : length of the vector&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;code>constexpr double length_sq() const noexcept;&lt;/code> : length squared of the vector. Avoids the &lt;code>sqrt&lt;/code> to save computing time&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;code>constexpr double angle() const noexcept;&lt;/code> : angle of the vector from the positive x-axis&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;h2 id="operators">Operators&lt;/h2>
-&lt;p>&lt;code>Vector2_t&lt;/code> is overloaded on common mathematical operators for both other vectors and scalars (&lt;code>double&lt;/code>s). Operations are conducted element wise. &lt;strong>This means that multiplication is element wise,&lt;/strong> and not the dot or cross product.&lt;/p>
-&lt;p>NOTE: all these are &lt;code>constexpr&lt;/code> and &lt;code>noexcept&lt;/code>&lt;/p>
-&lt;p>Given 2 &lt;code>Vector2_t&amp;lt;T&amp;gt;&lt;/code>s, &lt;code>lhs&lt;/code> and &lt;code>rhs&lt;/code>&lt;/p>
-&lt;ol>
-&lt;li>
-&lt;p>&lt;code>Vector2_t&amp;lt;T&amp;gt; operator+=(rhs)&lt;/code>&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;code>Vector2_t&amp;lt;T&amp;gt; operator-=(rhs)&lt;/code>&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;code>Vector2_t&amp;lt;T&amp;gt; operator*=(rhs)&lt;/code>&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;code>Vector2_t&amp;lt;T&amp;gt; operator*=(T num)&lt;/code>&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;code>Vector2_t&amp;lt;T&amp;gt; operator/=(rhs)&lt;/code>&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;code>Vector2_t&amp;lt;T&amp;gt; operator/=(T num)&lt;/code>&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;code>bool operator==(lhs, rhs);&lt;/code>&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;code>bool operator!=(lhs, rhs);&lt;/code>&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;code>Vector2_t&amp;lt;T&amp;gt; operator+(lhs, rhs);&lt;/code>&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;code>Vector2_t&amp;lt;T&amp;gt; operator-(lhs, rhs);&lt;/code>&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;code>Vector2_t&amp;lt;T&amp;gt; operator*(lhs, rhs);&lt;/code>&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;code>Vector2_t&amp;lt;T&amp;gt; operator*(lhs, T num);&lt;/code>&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;code>Vector2_t&amp;lt;T&amp;gt; operator*(T num, rhs);&lt;/code>&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;code>Vector2_t&amp;lt;T&amp;gt; operator/(lhs, rhs);&lt;/code>&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;code>Vector2_t&amp;lt;T&amp;gt; operator/(lhs, T num);&lt;/code>&lt;/p>
-&lt;/li>
-&lt;/ol></content></item></channel></rss>
+Example for(auto i : std::views::iota(1,10) {  sm::print(sm::random(), sm::rand_vector()); } Members All reside in namespace sm::random   static size_t cache_length: length of cache</description>
+      <content>&lt;h1 id=&#34;random&#34;&gt;random&lt;/h1&gt;
+&lt;h3 id=&#34;in-file-samariumutilrandomhpphttpsgithubcomstrangequark1041samariumblobmainsrcsamariumutilrandomhpp&#34;&gt;In file: &lt;a href=&#34;https://github.com/strangeQuark1041/samarium/blob/main/src/samarium/util/random.hpp&#34;&gt;&lt;code&gt;samarium/util/random.hpp&lt;/code&gt;&lt;/a&gt;&lt;/h3&gt;
+&lt;h2 id=&#34;contents&#34;&gt;Contents&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#contents&#34;&gt;Contents&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#definition&#34;&gt;Definition&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#about&#34;&gt;About&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#example&#34;&gt;Example&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#members&#34;&gt;Members&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;definition&#34;&gt;Definition&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-cpp&#34; data-lang=&#34;cpp&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;namespace&lt;/span&gt; sm&lt;span style=&#34;color:#f92672&#34;&gt;::&lt;/span&gt;random{}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;about&#34;&gt;About&lt;/h2&gt;
+&lt;p&gt;Generate random numbers, objects&amp;hellip;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;sm::random&lt;/code&gt; works by precomputing random &lt;code&gt;double&lt;/code&gt;s and storing them in a cache (&lt;code&gt;sm::random::cache&lt;/code&gt;)&lt;/p&gt;
+&lt;p&gt;This is much faster than creating random numbers in a hot loop.&lt;/p&gt;
+&lt;p&gt;To resize this cache, call &lt;code&gt;sm::random::resize_cache(/* size_t */ size)&lt;/code&gt;&lt;/p&gt;
+&lt;h2 id=&#34;example&#34;&gt;Example&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-cpp&#34; data-lang=&#34;cpp&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;auto&lt;/span&gt; i : std&lt;span style=&#34;color:#f92672&#34;&gt;::&lt;/span&gt;views&lt;span style=&#34;color:#f92672&#34;&gt;::&lt;/span&gt;iota(&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;{
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    sm&lt;span style=&#34;color:#f92672&#34;&gt;::&lt;/span&gt;print(sm&lt;span style=&#34;color:#f92672&#34;&gt;::&lt;/span&gt;random(), sm&lt;span style=&#34;color:#f92672&#34;&gt;::&lt;/span&gt;rand_vector());
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;members&#34;&gt;Members&lt;/h2&gt;
+&lt;h3 id=&#34;all-reside-in-namespace-smrandom&#34;&gt;All reside in namespace &lt;code&gt;sm::random&lt;/code&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;static size_t cache_length&lt;/code&gt;: length of cache&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;static size_t current&lt;/code&gt;: Current index in cache&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;static std::vector&amp;lt;double&amp;gt; cache&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;void fill_cache(size_t size)&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;double random()&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;template &amp;lt;typename T&amp;gt; T rand_range(Extents&amp;lt;T&amp;gt; range)&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;Vector2 rand_vector(Rect&amp;lt;double&amp;gt; bounding_box)&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;Vector2 rand_vector(Extents&amp;lt;f64&amp;gt; radius_range, Extents&amp;lt;f64&amp;gt; angle_range)&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://strangeQuark1041.github.io/samarium_docs/vector2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://strangeQuark1041.github.io/samarium_docs/vector2/</guid>
+      <description>Vector2 In file: samarium/math/Vector2.hpp  Definition About Example Members Constructors Literals Member Functions Operators  Definition template &amp;lt;sm::concepts::Number T&amp;gt; class sm::Vector2_t; using sm::Vector2 = Vector2_t&amp;lt;double&amp;gt;; About A Vector2_t holds 2 values - an x and a y coordinate. It represents a Euclidean vector, or arrow in space.
+A Vector2 is a vector of doubles. As it is used frequently, it is a typedef for Vector2_t&amp;lt;double&amp;gt; Similarly, Indices for indexing into Images and Dimensions are both typedefs for Vector2_t&amp;lt;size_t&amp;gt;</description>
+      <content>&lt;h1 id=&#34;vector2&#34;&gt;Vector2&lt;/h1&gt;
+&lt;h3 id=&#34;in-file-samariummathvector2hpphttpsgithubcomstrangequark1041samariumblobmainsrcsamariummathvector2hpp&#34;&gt;In file: &lt;a href=&#34;https://github.com/strangeQuark1041/samarium/blob/main/src/samarium/math/Vector2.hpp&#34;&gt;&lt;code&gt;samarium/math/Vector2.hpp&lt;/code&gt;&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#definition&#34;&gt;Definition&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#about&#34;&gt;About&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#example&#34;&gt;Example&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#members&#34;&gt;Members&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#constructors&#34;&gt;Constructors&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#literals&#34;&gt;Literals&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#member-functions&#34;&gt;Member Functions&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#operators&#34;&gt;Operators&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;definition&#34;&gt;Definition&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-cpp&#34; data-lang=&#34;cpp&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;template&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt;sm&lt;span style=&#34;color:#f92672&#34;&gt;::&lt;/span&gt;concepts&lt;span style=&#34;color:#f92672&#34;&gt;::&lt;/span&gt;Number T&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;sm&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;::&lt;/span&gt;Vector2_t;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;using&lt;/span&gt; sm&lt;span style=&#34;color:#f92672&#34;&gt;::&lt;/span&gt;Vector2 &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; Vector2_t&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;double&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;about&#34;&gt;About&lt;/h2&gt;
+&lt;p&gt;A &lt;code&gt;Vector2_t&lt;/code&gt; holds 2 values - an x and a y coordinate. It represents a Euclidean vector, or arrow in space.&lt;/p&gt;
+&lt;p&gt;A &lt;code&gt;Vector2&lt;/code&gt; is a vector of doubles. As it is used frequently, it is a typedef for &lt;code&gt;Vector2_t&amp;lt;double&amp;gt;&lt;/code&gt;
+Similarly, &lt;code&gt;Indices&lt;/code&gt; for indexing into &lt;code&gt;Images&lt;/code&gt; and &lt;code&gt;Dimensions&lt;/code&gt; are both typedefs for &lt;code&gt;Vector2_t&amp;lt;size_t&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;h2 id=&#34;example&#34;&gt;Example&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-cpp&#34; data-lang=&#34;cpp&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;auto&lt;/span&gt; vec &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; Vector2{&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;};
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;fmt&lt;span style=&#34;color:#f92672&#34;&gt;::&lt;/span&gt;print(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;{}&amp;#34;&lt;/span&gt;, vec); &lt;span style=&#34;color:#75715e&#34;&gt;// prints: Vec( 2.000,  3.000)
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;members&#34;&gt;Members&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;T x&lt;/code&gt; : x-coordinate&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;T y&lt;/code&gt; : y-coordinate&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;constructors&#34;&gt;Constructors&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;Vector2_t&lt;/code&gt; is an &lt;a href=&#34;https://en.cppreference.com/w/cpp/language/aggregate_initialization&#34;&gt;aggregate&lt;/a&gt; and hence all constructors are generated by the compiler. Use as:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-cpp&#34; data-lang=&#34;cpp&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;auto&lt;/span&gt; vec1 &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; sm&lt;span style=&#34;color:#f92672&#34;&gt;::&lt;/span&gt;Vector2(); &lt;span style=&#34;color:#75715e&#34;&gt;// x=0,y=0
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;auto&lt;/span&gt; vec2 &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; sm&lt;span style=&#34;color:#f92672&#34;&gt;::&lt;/span&gt;Vector2{}; &lt;span style=&#34;color:#75715e&#34;&gt;// x=0,y=0
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;auto&lt;/span&gt; vec3 &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; sm&lt;span style=&#34;color:#f92672&#34;&gt;::&lt;/span&gt;Vector2(&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;); &lt;span style=&#34;color:#75715e&#34;&gt;// x=1,y=2
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;auto&lt;/span&gt; vec4 &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; sm&lt;span style=&#34;color:#f92672&#34;&gt;::&lt;/span&gt;Vector2{&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;};  &lt;span style=&#34;color:#75715e&#34;&gt;// x=1,y=2
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;auto&lt;/span&gt; vec5 &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; sm&lt;span style=&#34;color:#f92672&#34;&gt;::&lt;/span&gt;Vector2{.x &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;, .y &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;}; &lt;span style=&#34;color:#75715e&#34;&gt;// x=1,y=2
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;literals&#34;&gt;Literals&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;consteval Vector2 operator&amp;quot;&amp;quot; _x(long double x);&lt;/code&gt; : constructs &lt;code&gt;Vector2{x, 0}&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;consteval Vector2 operator&amp;quot;&amp;quot; _y(long double y);&lt;/code&gt; : constructs &lt;code&gt;Vector2{0, y}&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Example&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-cpp&#34; data-lang=&#34;cpp&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;using&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;namespace&lt;/span&gt; sm&lt;span style=&#34;color:#f92672&#34;&gt;::&lt;/span&gt;literals;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;auto&lt;/span&gt; vec1 &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1.0&lt;/span&gt;x; &lt;span style=&#34;color:#75715e&#34;&gt;// (1,0)
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;auto&lt;/span&gt; vec2 &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;4.2&lt;/span&gt;y; &lt;span style=&#34;color:#75715e&#34;&gt;// (0,-4.2)
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;auto&lt;/span&gt; vec3 &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1.0&lt;/span&gt;x &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;3.14&lt;/span&gt;y; &lt;span style=&#34;color:#75715e&#34;&gt;// (1,-3.14)
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;member-functions&#34;&gt;Member Functions&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;constexpr double length() const noexcept;&lt;/code&gt; : length of the vector&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;constexpr double length_sq() const noexcept;&lt;/code&gt; : length squared of the vector. Avoids the &lt;code&gt;sqrt&lt;/code&gt; to save computing time&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;constexpr double angle() const noexcept;&lt;/code&gt; : angle of the vector from the positive x-axis&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;operators&#34;&gt;Operators&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;Vector2_t&lt;/code&gt; is overloaded on common mathematical operators for both other vectors and scalars (&lt;code&gt;double&lt;/code&gt;s). Operations are conducted element wise. &lt;strong&gt;This means that multiplication is element wise,&lt;/strong&gt; and not the dot or cross product.&lt;/p&gt;
+&lt;p&gt;NOTE: all these are &lt;code&gt;constexpr&lt;/code&gt; and &lt;code&gt;noexcept&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Given 2 &lt;code&gt;Vector2_t&amp;lt;T&amp;gt;&lt;/code&gt;s, &lt;code&gt;lhs&lt;/code&gt; and &lt;code&gt;rhs&lt;/code&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;Vector2_t&amp;lt;T&amp;gt; operator+=(rhs)&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;Vector2_t&amp;lt;T&amp;gt; operator-=(rhs)&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;Vector2_t&amp;lt;T&amp;gt; operator*=(rhs)&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;Vector2_t&amp;lt;T&amp;gt; operator*=(T num)&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;Vector2_t&amp;lt;T&amp;gt; operator/=(rhs)&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;Vector2_t&amp;lt;T&amp;gt; operator/=(T num)&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;bool operator==(lhs, rhs);&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;bool operator!=(lhs, rhs);&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;Vector2_t&amp;lt;T&amp;gt; operator+(lhs, rhs);&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;Vector2_t&amp;lt;T&amp;gt; operator-(lhs, rhs);&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;Vector2_t&amp;lt;T&amp;gt; operator*(lhs, rhs);&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;Vector2_t&amp;lt;T&amp;gt; operator*(lhs, T num);&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;Vector2_t&amp;lt;T&amp;gt; operator*(T num, rhs);&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;Vector2_t&amp;lt;T&amp;gt; operator/(lhs, rhs);&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;Vector2_t&amp;lt;T&amp;gt; operator/(lhs, T num);&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+</content>
+    </item>
+    
+  </channel>
+</rss>
