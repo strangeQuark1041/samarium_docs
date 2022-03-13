@@ -1,9 +1,10 @@
 # random
 
-### In file: `samarium/util/random.hpp`
+### In file: [`samarium/util/random.hpp`](https://github.com/strangeQuark1041/samarium/blob/main/src/samarium/util/random.hpp)
 
-### Contents
+## Contents
 
+- [Contents](#contents)
 - [Definition](#definition)
 - [About](#about)
 - [Example](#example)

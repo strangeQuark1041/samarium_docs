@@ -1,9 +1,10 @@
 # math
 
-### In file: `samarium/math/math.hpp`
+#### In file: [`samarium/math/math.hpp`](https://github.com/strangeQuark1041/samarium/blob/main/src/samarium/math/math.hpp)
 
-### Contents
+## Contents
 
+- [Contents](#contents)
 - [Definition](#definition)
 - [About](#about)
 - [Example](#example)

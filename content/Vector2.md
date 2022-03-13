@@ -1,6 +1,6 @@
 # Vector2
 
-### In file: `samarium/math/Vector2.hpp`
+### In file: [`samarium/math/Vector2.hpp`](https://github.com/strangeQuark1041/samarium/blob/main/src/samarium/math/Vector2.hpp)
 
 - [Definition](#definition)
 - [About](#about)
